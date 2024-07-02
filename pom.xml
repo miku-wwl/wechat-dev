@@ -7,12 +7,12 @@
     <groupId>com.weilai</groupId>
     <artifactId>wechat-dev</artifactId>
     <version>1.0-SNAPSHOT</version>
-<!--
-        打包方式：
-        pom：针对root使用，并且当前root可以管理所有的jar包
-        jar：默认，常规springboot打包使用jar
-        war: 老项目，使用外部tomcat容器进行发布和运行
--->
+    <!--
+            打包方式：
+            pom：针对root使用，并且当前root可以管理所有的jar包
+            jar：默认，常规springboot打包使用jar
+            war: 老项目，使用外部tomcat容器进行发布和运行
+    -->
     <packaging>pom</packaging>
     <modules>
         <module>wechat-common</module>
@@ -25,5 +25,34 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.13</version>
+        <relativePath/>
+    </parent>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 引入微服务 SpringCloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2022.0.4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- 引入微服务组件 SpringCloud Alibaba -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2022.0.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
 
 </project>
