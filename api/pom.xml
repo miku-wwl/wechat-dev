@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>auth-service-88</module>
-        <module>main-service-77</module>
+        <module>main-service-66</module>
         <module>file-service-55</module>
     </modules>
 
