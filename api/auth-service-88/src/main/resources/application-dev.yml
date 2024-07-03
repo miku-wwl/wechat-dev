@@ -1,0 +1,10 @@
+server:
+  port: 88
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.126.19.236:8848
+#        username: nacos
+#        password: nacos
