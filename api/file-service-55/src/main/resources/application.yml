@@ -8,3 +8,13 @@ server:
 logging:
   level:
     root: info
+
+spring:
+  application:
+    name: file-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 191.126.19.236:8848
+#        username: nacos
+#        password: nacos
