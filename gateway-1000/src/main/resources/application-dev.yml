@@ -2,6 +2,12 @@ server:
   port: 1000
 
 spring:
+  data:
+    redis:
+      host: 101.126.19.236
+      port: 6379
+      database: 0
+      password: 32110219miku!
   cloud:
     nacos:
       discovery:
