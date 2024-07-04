@@ -15,10 +15,6 @@ package com.weilai.grace.result;
  * 				555：异常抛出信息
  * 				556: 用户qq校验异常
  * 			    557: 校验用户是否在CAS登录，用户门票的校验
- * @Copyright: Copyright (c) 2020
- * @Company: www.imooc.com
- * @author 慕课网 - 风间影月
- * @version V1.0
  */
 public class IMOOCJSONResult {
 

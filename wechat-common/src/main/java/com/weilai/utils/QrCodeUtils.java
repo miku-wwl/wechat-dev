@@ -13,9 +13,6 @@
 //import java.util.Map;
 //import java.util.UUID;
 //
-///**
-// * @Auther 风间影月
-// */
 //public class QrCodeUtils {
 //
 //    public static String generateQRCode(String data) {
