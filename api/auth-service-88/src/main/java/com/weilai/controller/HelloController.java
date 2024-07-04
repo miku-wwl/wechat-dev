@@ -1,15 +1,18 @@
 package com.weilai.controller;
 
-import com.weilai.SMSTask;
+
+import com.weilai.tasks.SMSTask;
 import com.weilai.utils.MyInfo;
 import com.weilai.utils.SMSUtils;
 import jakarta.annotation.Resource;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("a")
+@Slf4j
 public class HelloController {
 
     @Resource

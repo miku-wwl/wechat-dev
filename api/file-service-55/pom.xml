@@ -11,5 +11,12 @@
 
     <artifactId>file-service-55</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.weilai</groupId>
+            <artifactId>base-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
