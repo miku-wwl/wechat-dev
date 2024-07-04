@@ -8,3 +8,9 @@ spring:
         server-addr: 101.126.19.236:8848
 #        username: nacos
 #        password: nacos
+  data:
+    redis:
+      host: 101.126.19.236
+      port: 6379
+      database: 0
+      password: 32110219miku!
