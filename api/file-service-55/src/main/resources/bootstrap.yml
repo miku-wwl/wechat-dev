@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: file-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 101.126.19.236:8848
+        file-extension: yaml
