@@ -1,0 +1,89 @@
+/* page {
+	display: flex;
+	flex-direction: column;
+	background-color: #fefffe;
+	padding: 0;
+} */
+
+.navigation-bar {
+	background-color: transparent;
+}
+
+.navigation-bar-scroll {
+	background-color: #edeeee;
+}
+
+
+.myInfo {
+	background-color: #fefffe;
+
+	display: flex;	
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.display-area {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.bottles {
+	position: fixed;
+	top: 500px;
+	z-index: 9999;
+}
+
+.sea {
+	height: 80vh;
+}
+
+.bottle-oper-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	width: 30%;
+}
+
+/* #ifdef H5 */
+.bottle-oper-wrapper:hover {
+	background-color: aliceblue;
+}
+/* #endif */
+
+/* #ifndef H5 */
+.bottle-oper-selected {
+	background-color: aliceblue;
+}
+/* #endif */
+
+.rengyige {
+	width: 180upx;
+	height: 220upx;
+	
+	align-self: center;
+}
+
+.laoyige {
+	width: 280upx;
+	height: 220upx;
+	
+	align-self: center;
+}
+
+.wojiande {
+	width: 180upx;
+	height: 220upx;
+	
+	align-self: center;
+}
+
+.action-words {
+	color: darkgray;
+	font-weight: 400;
+	align-self: center;
+	
+	align-self: center;
+}

@@ -1,0 +1,84 @@
+.page {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fefffe;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.qrcode-box {
+	width: 750rpx;
+	height: 750rpx;
+	position: fixed;
+	top: 200rpx;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.face-box {
+	width: 550rpx;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+	align-self: center;
+}
+
+.face {
+	width: 60px;
+	height: 60px;
+	
+	border-radius: 6px;
+}
+
+.my-info-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	margin-left: 16px;
+	
+	align-self: center;
+}
+
+.nickname {
+	font-size: 20px;
+	color: #1a1a1a;
+}
+
+.address {
+	color: #b2b2b2;
+}
+
+.qrcode-wrapper {
+	margin-top: 50rpx;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	align-self: center;
+	
+	width: 550rpx;
+}
+
+.qrcode  {
+	width: 550rpx;
+	height: 550rpx;
+	align-self: center;
+}
+
+.tips {
+	margin-top: 20px;
+	align-self: center;
+	font-size: 12px;
+	color: #b4b4b4;
+}

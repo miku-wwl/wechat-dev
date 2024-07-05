@@ -1,0 +1,904 @@
+{
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+		    "path" : "pages/welcome/welcome",
+		    "style" : {
+				"navigationBarTitleText" : "主页",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+					"bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/others/me2",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#f8f8f8",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/loginRegist/loginBefore",
+		    "style" : {
+		    	"navigationBarTitleText" : "登录",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		    		"bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/loginRegist/loginNewAccount",
+		    "style" : {
+		    	"navigationBarTitleText" : "登录",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		    		"bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/loginRegist/regist",
+		    "style" : {
+		    	"navigationBarTitleText" : "注册",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		    		"bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		   }
+		},
+		{
+		    "path" : "pages/msgList/msgList",
+		    "style" : {
+				"navigationBarTitleText" : "微信",
+				"app-plus": {
+					"titleNView": false
+					// {
+					// 	"buttons": [ //原生标题栏按钮配置,
+					// 		{
+					// 			"text": "\ueb89", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+					// 			"fontSize": "20",
+					// 			"fontSrc": "static/fonts/iconfont.ttf"
+					// 		}
+					// 	],
+					// 	"padding-right": "100px"
+					// }
+				},
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/msgList/singleChat",
+		    "style" : {
+		    	"navigationBarTitleText" : "消息列表",
+		    	"navigationBarTextStyle":"black",
+		    	"navigationBarBackgroundColor": "#31B9B3",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none", 	// 禁止出现滚动条
+					"softinputMode": "adjustResize"
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/msgList/groupChat",
+		    "style" : {
+		    	"navigationBarTitleText" : "群聊",
+		    	"navigationBarTextStyle":"black",
+		    	"navigationBarBackgroundColor": "#31B9B3",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none", 	// 禁止出现滚动条
+					"softinputMode": "adjustResize"
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/msgList/msgVideo",
+		    "style" : {
+		    	"navigationBarTitleText" : "",
+		    	"navigationBarTextStyle":"white",
+		    	"navigationBarBackgroundColor": "#000000",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none", 	// 禁止出现滚动条
+					"softinputMode": "adjustResize"
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/msgList/singleChatDetail",
+		    "style": {
+		        "navigationBarTitleText": "聊天详情",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ecedec",
+					"backgroundColorBottom" : "#ecedec",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/msgList/groupChatDetail",
+		    "style": {
+		        "navigationBarTitleText": "聊天详情",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ecedec",
+					"backgroundColorBottom" : "#ecedec",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/msgList/chooseUserToGroup",
+		    "style" : {
+				"navigationBarTitleText" : "选择联系人",
+		        "app-plus" : {
+		            "titleNView" : false 	// 禁用原生导航栏
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/contacts",
+		    "style" : {
+				"navigationBarTitleText" : "联系人",
+		        "app-plus" : {
+		            "titleNView" : false 	// 禁用原生导航栏
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/newFriend",
+		    "style" : {
+				"navigationBarTitleText" : "新的朋友",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#fefffe",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/blackList",
+		    "style" : {
+				"navigationBarTitleText" : "黑名单",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#fefffe",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/groupList",
+		    "style" : {
+				"navigationBarTitleText" : "群聊",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#fefffe",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/addFriend",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#fefffe",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/verifyFriend",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": " ",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fefffe",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#fefffe",
+		        	"backgroundColorBottom" : "#ecedec",
+		        	"scrollIndicator" : "none",
+					
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								// &#xe708;
+								// &#xeb89;
+								"text": "\ue708", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "20",
+								"fontSrc": "./static/fonts/iconfont.ttf"
+							}
+						]
+						// "padding-right": "100px"
+					}
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/searchedFriend",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": " ",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fefffe",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#fefffe",
+		        	"backgroundColorBottom" : "#ecedec",
+		        	"scrollIndicator" : "none",
+					
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								// &#xe708;
+								// &#xeb89;
+								"text": "\ue708", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "20",
+								"fontSrc": "./static/fonts/iconfont.ttf"
+							}
+						]
+						// "padding-right": "100px"
+					}
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/friendPage",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": " ",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fefffe",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none"  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#fefffe",
+		        	"backgroundColorBottom" : "#ecedec",
+		        	"scrollIndicator" : "none",
+					
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								// &#xe708;
+								// &#xeb89;
+								"text": "\ue708", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "20",
+								"fontSrc": "./static/fonts/iconfont.ttf"
+							}
+						]
+						// "padding-right": "100px"
+					}
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/friendSetting",
+		    "style": {
+		        "navigationBarTitleText": "资料设置",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ecedec",
+					"backgroundColorBottom" : "#ecedec",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/contacts/friendRemark",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "设置备注",
+				"navigationBarBackgroundColor": "#ecedec",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#5a5a5b",
+								"colorPressed" : "#3c3a3a",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#ecedec",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/passFriendRequest",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "通过好友验证",
+				"navigationBarBackgroundColor": "#fefffe",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	"bounce" : "none",  		// 将回弹属性关掉
+					
+		        	"scrollIndicator" : "none",
+					"backgroundColorTop" : "#fefffe",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/contacts/sendMyAddRequest",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "申请添加朋友",
+				"navigationBarBackgroundColor": "#fefffe",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					
+		        	"scrollIndicator" : "none",
+					"backgroundColorTop" : "#fefffe",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/discovery/discovery",
+		    "style": {
+		        "navigationBarTitleText": "发现",
+		    	"navigationBarTextStyle":"black",
+		    	"navigationBarBackgroundColor": "#ecedec",
+		    	"app-plus" : {
+		    	    // "titleNView" : false, 	// 禁用原生导航栏
+		    		// "bounce" : "none"  		// 将回弹属性关掉
+		    		"backgroundColorTop" : "#ecedec",
+		    		"backgroundColorBottom" : "#ecedec",
+		    		"scrollIndicator" : "none"
+		    	},
+		    	"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/me",
+		    "style" : {
+				"navigationBarTitleText" : "我",
+		        "app-plus" : {
+		            "titleNView" : false 	,// 禁用原生导航栏
+					"backgroundColorTop" : "#fefffe",
+					"backgroundColorBottom" : "#ecedec"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/discovery/myFriendCircle",
+		    "style" : {
+				"navigationBarTitleText" : " ",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#fefffe",
+		        "app-plus" : {
+		            "titleNView" : false 	,// 禁用原生导航栏
+					"backgroundColorTop" : "#000000",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/discovery/allFriendCircle",
+		    "style" : {
+				"navigationBarTitleText" : "朋友圈",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#edeeee",
+		        "app-plus" : {
+		            // "titleNView" : false 	,// 禁用原生导航栏
+					"titleNView": {
+						"type": "transparent",//透明渐变导航栏 App-nvue 2.4.4+ 支持
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								// &#xe708;
+								// &#xeb89;&#xe639;
+								"text": "\ue639", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "20",
+								"fontSrc": "./static/fonts/iconfont.ttf"
+							}
+						]
+					},
+					"backgroundColorTop" : "#000000",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/discovery/driftBottle",
+		    "style" : {
+				"navigationBarTitleText" : "漂流瓶",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#edeeee",
+		        "app-plus" : {
+		            // "titleNView" : false 	,// 禁用原生导航栏
+					"titleNView": {
+						"type": "transparent"//透明渐变导航栏 App-nvue 2.4.4+ 支持
+					},
+					"bounce" : "none", 
+					"backgroundColorTop" : "#000000",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/discovery/createContent",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fefffe",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	"bounce" : "none",  		// 将回弹属性关掉
+					
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "发表",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#5a5a5b",
+								"colorPressed" : "#3c3a3a",
+								"width": "56px"
+							}
+						]
+					},
+					
+		        	"scrollIndicator" : "none",
+					"backgroundColorTop" : "#fefffe",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/discovery/circleCover",
+		    "style": {
+		        "navigationBarTitleText": "更换相册封面",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ecedec",
+					"backgroundColorBottom" : "#ecedec",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/discovery/videoShow",
+		    "style" : {
+		    	"navigationBarTitleText" : "",
+		    	"navigationBarTextStyle":"white",
+		    	"navigationBarBackgroundColor": "#000000",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none", 	// 禁止出现滚动条
+					"softinputMode": "adjustResize"
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/others/settings",
+		    "style": {
+		        "navigationBarTitleText": "设置",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ecedec",
+					"backgroundColorBottom" : "#ecedec",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/others/chatBG",
+		    "style": {
+		        "navigationBarTitleText": "聊天背景",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ecedec",
+					"backgroundColorBottom" : "#ecedec",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/me/myPage",
+		    "style": {
+		        "navigationBarTitleText": "个人信息",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ecedec",
+					"backgroundColorBottom" : "#ecedec",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/me/userInfo/myFace",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "个人头像",
+				"navigationBarBackgroundColor": "#000000",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#000000",
+		        	"backgroundColorBottom" : "#000000",
+		        	"scrollIndicator" : "none",
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								// &#xe708;
+								// &#xeb89;
+								"text": "\ue708", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "20",
+								"fontSrc": "./static/fonts/iconfont.ttf"
+							}
+						]
+						// "padding-right": "100px"
+					}
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/myNickname",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "设置名字",
+				"navigationBarBackgroundColor": "#ecedec",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#5a5a5b",
+								"colorPressed" : "#3c3a3a",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#ecedec",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/paiyipai",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fefffe",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	"bounce" : "none",  		// 将回弹属性关掉
+					
+		        	"scrollIndicator" : "none",
+					"backgroundColorTop" : "#fefffe",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/myWechatNumber",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fefffe",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	"bounce" : "none",  		// 将回弹属性关掉
+					
+		        	"scrollIndicator" : "none",
+					"backgroundColorTop" : "#fefffe",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/myQrCode",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fefffe",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					
+		        	"scrollIndicator" : "none",
+					"backgroundColorTop" : "#fefffe",
+					"backgroundColorBottom" : "#fefffe"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/mySex",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "设置性别",
+				"navigationBarBackgroundColor": "#ecedec",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#5a5a5b",
+								"colorPressed" : "#3c3a3a",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#ecedec",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/mySign",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "设置个性签名",
+				"navigationBarBackgroundColor": "#ecedec",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "完成",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#5a5a5b",
+								"colorPressed" : "#3c3a3a",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ecedec",
+		        	"backgroundColorBottom" : "#ecedec",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/chooseProvince",
+		    "style": {
+				"navigationBarTitleText": "设置地区",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"titleNView": {
+					// "buttons": [ //原生标题栏按钮配置,
+					// 	{
+					// 		"text": "完成",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+					// 		"fontSize" : "16px",
+					// 		"color" : "#5a5a5b",
+					// 		"colorPressed" : "#3c3a3a",
+					// 		"width": "56px"
+					// 	}
+					// ]
+				},
+				"backgroundColorTop" : "#ecedec",
+				"backgroundColorBottom" : "#ecedec"
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/chooseCity",
+		    "style": {
+		        "navigationBarTitleText": "设置地区",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ecedec",
+				"titleNView": {
+					// "buttons": [ //原生标题栏按钮配置,
+					// 	{
+					// 		"text": "完成",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+					// 		"fontSize" : "16px",
+					// 		"color" : "#5a5a5b",
+					// 		"colorPressed" : "#3c3a3a",
+					// 		"width": "56px"
+					// 	}
+					// ]
+				},
+				"backgroundColorTop" : "#ecedec",
+				"backgroundColorBottom" : "#ecedec"
+		    }
+		},
+		{
+		    "path" : "pages/me/userInfo/myName",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的姓名",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/welcome/welcome1",
+		    "style" : {
+				"navigationBarTitleText" : "欢迎",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+					"bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		}
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarBackgroundColor" : "#ecedec",
+        "backgroundColor" : "#ecedec",
+		"backgroundColorTop" : "#ecedec",
+		"backgroundColorBottom" : "#fefffe",
+		"fontSize": "16px"
+    },
+    "tabBar" : {
+        "color" : "#515151",
+        "selectedColor" : "#06c160",
+        "borderStyle" : "#dddddd",
+        "backgroundColor" : "#f5f5f5",
+        "list" : [
+			{
+			    "pagePath" : "pages/msgList/msgList",
+			    "text" : "微信",
+			    "iconPath" : "static/icons/wechat/tab-wechat.png",
+			    "selectedIconPath" : "static/icons/wechat/tab-wechat-selected.png"
+			},
+			{
+			    "pagePath" : "pages/contacts/contacts",
+			    "text" : "通讯录",
+			    "iconPath" : "static/icons/wechat/tab-contacts.png",
+			    "selectedIconPath" : "static/icons/wechat/tab-contacts-selected.png"
+			},
+			{
+			    "pagePath" : "pages/discovery/discovery",
+			    "text" : "发现",
+			    "iconPath" : "static/icons/wechat/tab-discovery.png",
+			    "selectedIconPath" : "static/icons/wechat/tab-discovery-selected.png"
+			},
+            {
+                "pagePath" : "pages/me/me",
+                "text" : "我",
+                "iconPath" : "static/icons/wechat/tab-me.png",
+                "selectedIconPath" : "static/icons/wechat/tab-me-selected.png"
+            }
+        ]
+    }
+}

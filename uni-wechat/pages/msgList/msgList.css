@@ -1,0 +1,305 @@
+page {
+	display: flex;
+	flex-direction: column;
+	background-color: #fefffe;
+	/* background-color: #ecedec; */
+}
+
+.show-me {
+	width: 333rpx;
+	height: 124rpx;
+	
+	align-self: center;
+}
+
+.space-none {
+	width: 22px;
+	height: 22px;
+	
+	position: relative;
+	margin-left: 30rpx;
+	
+	align-self: center;
+}
+
+.add-icon {
+	align-self: center;
+	
+	width: 22px;
+	height: 22px;
+	
+	position: relative;
+	margin-right: 30rpx;
+	
+}
+
+.middle-title {
+	align-self: center;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+/* + 号按钮 */
+.plus-box {
+	display: flex;
+	flex-direction: column;
+	
+	position: fixed;
+	/* top: var(--status-bar-height) + 44; */
+	right: 6rpx;
+	z-index: 9999;
+}
+
+.up-arrow-icon {
+	width: 20px;
+	height: 20px;
+	
+	align-self: flex-end;
+	margin-right: 26rpx;
+	
+	margin-top: -8px;
+}
+
+.items-wrapper {
+	display: flex;
+	flex-direction: column;
+	
+	background-color: #4c4c4c;
+	width: 140px;
+	
+	border-radius: 5px;
+	align-self: flex-end;
+	/* margin-right: 6px; */
+	
+	margin-top: -9px;
+}
+
+.single-item {
+	display: flex;
+	flex-direction: row;
+	
+	color: #fefffe;
+	font-size: 18px;
+	
+	padding: 14px 16px;
+}
+
+.item-icon {
+	width: 22px;
+	height: 22px;
+	align-self: center;
+}
+
+.item-text {
+	margin-left: 10px;
+	align-self: center;
+}
+
+.block-me {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	background-color: #ecedec;
+}
+
+/* 聊天列表开始 */
+.msg-list-box {
+	width: 100%;
+	height: var(--status-bar-height);
+	/* background-color: bisque; */
+	
+	
+	/* #ifdef H5 */
+	/* padding-bottom: 158px; */
+	/* margin-bottom: 138px; */
+	/* #endif */
+	
+}
+.single-msg-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+	/* padding-left: 14px; */
+	/* background-color: #fefffe; */
+}
+.single-msg-item-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	padding-left: 14px;
+	background-color: #fefffe;
+}
+/* #ifdef H5 */
+.single-msg-item:hover {
+	background-color: #e5e5e5;
+}
+/* #endif */
+
+.msg-badge {
+	z-index: 20;
+}
+
+.chat-cover-wrapper {
+	padding: 12px 0;
+}
+
+.chat-cover {
+	width: 48px;
+	height: 48px;
+	border-radius: 5px;
+	/* z-index: 10; */
+}
+
+.chat-msg-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* width: 590rpx; */
+	flex-grow: 1;
+	margin-left: 14px;
+	padding: 14px 14px 14px 0;
+	/* background-color: aqua; */
+	border-bottom: 0.5px solid #dbdbda;
+}
+
+.chat-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	/* background-color: red; */
+}
+.time-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	/* background-color: green; */
+}
+
+.chat-title {
+	font-size: 18px;
+	font-weight: 500;
+	color: #181818;
+}
+
+.chat-content {
+	font-size: 16px;
+	font-weight: 300;
+	color: #a5a5a5;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.too-much-words {
+	/* width: 100px; */
+	/* 文字长度超出限定宽度，则隐藏超出的内容 */
+	/* overflow: hidden; */
+	/* 设置文字在一行显示，不能换行 */
+	/* white-space: nowrap; */
+	/* 规定当文本溢出时，显示省略符号来代表被修剪的文本 */
+	/* text-overflow: ellipsis; */
+	
+	/*1. 超出的部分隐藏 */
+	overflow: hidden;
+	/*2. 文字用省略号替代超出的部分 */
+	text-overflow: ellipsis;
+	/* 3. 弹性伸缩盒子模型显示 */
+	display: -webkit-box;
+	/* 4. 限制在一个块元素显示的文本的行数 */
+	-webkit-line-clamp: 1;
+	/* 5. 设置或检索伸缩盒对象的子元素的排列方式 */
+	-webkit-box-orient: vertical;
+}
+
+.chat-time {
+	font-size: 13px;
+	color: #cccccc;
+}
+
+.msg-item-notouch {
+	background-color: #fefffe;
+}
+
+.msg-item-touched {
+	background-color: #e5e5e5;
+}
+
+.icon-ignore-sound {
+	width: 16px;
+	height: 16px;
+}
+
+.call-me {
+	color: #f95151;
+	margin-right: 4px;
+}
+
+
+.search-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	height: 36px;
+	padding: 4px 8px 14px 8px;
+	
+	background-color: #ecedec;
+}
+
+.search-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	background-color: #fefffe;
+	width: 100%;
+	
+	border-radius: 5px;
+}
+
+.search-middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+}
+
+.icon-search {
+	width: 16px;
+	height: 16px;
+	
+	align-self: center;
+}
+
+.search-words {
+	color: #b2b2b2;
+	margin-left: 4px;
+	align-self: center;
+}
+
+.group-cover {
+	width: 48px;
+	height: 48px;
+	border-radius: 5px;
+	align-self: center;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+	background-color: #dddee0;
+	padding:  2px;
+}
+
+.member-face {
+	width: 14px;
+	height: 14px;
+	border-radius: 2px;
+	align-self: center;
+}
